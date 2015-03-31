@@ -5,8 +5,14 @@ footer {
     padding-top: 2rem;
     margin-top: 4rem;
     font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.1rem;
     text-align: center;
     color: $medium-gray;
+    a {
+      color: $medium-gray;
+      border-bottom: 1px dotted $medium-gray;
+    }
     .copyright {
       margin-bottom: 0.5rem;
     }

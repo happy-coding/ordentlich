@@ -18,10 +18,15 @@
   $post-box-width: 18em;
   $post-box-color: transparentize($base-font-color, 0.3);
   $post-box-top-colors: 
-    #EDCF6C, 
-    #75AE85, 
-    #EC5A4B, 
-    #F5D5A6,
+    #7F1637, 
+    #047878, 
+    #FFB733, 
+    #F57336,
+    #C22121,
+    #2C3E50,
+    #E74C3C,
+    #5C832F,
+    #3498DB,
     #E15F14;
 
     @include clearfix;
@@ -43,7 +48,7 @@
     margin: $post-box-gutter;
     padding: 2em 2em 3em 2em;
 
-    @for $i from 1 to 6 {
+    @for $i from 1 to 11 {
       &:nth-child(#{$i}) {
         $color-from-list: nth($post-box-top-colors, $i);
         border-top: 1px solid $color-from-list;

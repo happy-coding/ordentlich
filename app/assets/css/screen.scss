@@ -12,16 +12,23 @@
 
 #content {
   @include media(min-width 640px) {
-    @include outer-container(90%);
+    @include outer-container(93%);
     article {
       @include span-columns(10);
       @include shift(1);
     }
   }
   @include media(max-width 640px) {
-    @include outer-container(98%);
+    @include outer-container(95%);
     article {
       @include span-columns(12);
+    }
+  }
+  @include media(min-width 1200px) {
+    @include outer-container(1200px);
+    article {
+      @include span-columns(10);
+      @include shift(1);
     }
   }
 }

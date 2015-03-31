@@ -4,9 +4,20 @@ article {
       font-weight: 300;
     }
     p, ul, ol {
-      font-size: 1.7rem;
+      font-family: 'Open Sans', sans-serif;
+      @include media(min-width 640px) {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+      @include media(max-width 640px) {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+      }
+      font-weight: 300;
+      font-variant: normal;
     }
     img {
+      margin: 2.3rem 0;
       border: 1px solid $blue;
       padding: 0.2rem;
     }
