@@ -1,0 +1,24 @@
+# Site settings
+title: Ordentlich Theme
+email: contact@happy-coding.com
+url: http://happy-coding.github.io/ordentlich/
+description: "Ordentlich. The terrific neat theme for the Ghost blogging platform."
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Footer settings
+footer: HAPPY CODING
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/happy_coding
+  - title: github
+    url: https://github.com/happy-coding/ordentlich
+
+# Build settings
+markdown: kramdown
+permalink: pretty
