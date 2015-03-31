@@ -14,6 +14,16 @@ To continuously monitor changes in your files run
 
 `gulp watch`
 
+## Gulp & Bower installation
+
+To install `bower` run
+
+`npm install -g bower`
+
+for `gulp`
+
+`npm install -g gulp`
+
 ## Demo & Examples
 
 The following pages use this theme for example:
