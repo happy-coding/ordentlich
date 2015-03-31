@@ -14,11 +14,15 @@ To continuously monitor changes in your files run
 
 `gulp watch`
 
-## Bower installation
+## Gulp & Bower installation
 
 To install `bower` run
 
 `npm install -g bower`
+
+for `gulp`
+
+`npm install -g gulp`
 
 ## Demo & Examples
 
