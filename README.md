@@ -29,3 +29,9 @@ for `gulp`
 The following pages use this theme for example:
 
 - [Coding w/ Passion Magazin](http://mag.codingwithpassion.com/)
+
+### Screenshot
+
+This is an example Screenshot of the Ordentlich theme
+
+![](https://github.com/happy-coding/ordentlich/blob/master/CWP-Demo-Ordentlich-Theme.png)
