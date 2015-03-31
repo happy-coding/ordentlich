@@ -1,0 +1,77 @@
+.post-boxes {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $base-font-color: $dark-gray !default;
+  
+  a {
+    text-decoration: none;
+  }  
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $post-box-border-color: $light-gray;
+  $post-box-border: 1px solid $post-box-border-color;
+  $post-box-background: lighten($light-gray, 10%);
+  $post-box-gutter: 0.4em;
+  $post-box-width: 18em;
+  $post-box-color: transparentize($base-font-color, 0.3);
+  $post-box-top-colors: 
+    #EDCF6C, 
+    #75AE85, 
+    #EC5A4B, 
+    #F5D5A6,
+    #E15F14;
+
+    @include clearfix;
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(stretch);
+    @include flex-wrap(wrap);
+    clear: both;
+    text-align: center;
+
+  .post-box {
+    @include transition (all 0.2s ease-in-out);
+    @include flex(2 2 15em);
+    @include align-self(stretch);
+    background: $post-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: inset 0 0 1px $post-box-border-color, 0 1px 2px darken($base-background-color, 10%);
+    display: block;
+    margin: $post-box-gutter;
+    padding: 2em 2em 3em 2em;
+
+    @for $i from 1 to 6 {
+      &:nth-child(#{$i}) {
+        $color-from-list: nth($post-box-top-colors, $i);
+        border-top: 1px solid $color-from-list;
+        border-bottom: 1px solid $color-from-list;
+
+        &:focus,
+        &:hover {
+          background-color: transparentize($color-from-list, 0.8);
+        }
+      }
+    }
+
+    .post-title {
+      color: $post-box-color;
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      color: transparentize($post-box-color, 0.1);
+      line-height: 1.5em;
+      margin: auto;
+    }
+  }
+
+  .post-box-big {
+    @include flex(1 1 40em);
+  }
+}
+

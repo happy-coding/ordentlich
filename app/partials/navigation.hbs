@@ -1,0 +1,12 @@
+<header class="centered-navigation" role="banner">
+  <div class="centered-navigation-wrapper">
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu"><img src="{{asset "images/arrow_down.png"}}"/></a>
+    <nav role="navigation">
+      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+        {{#foreach navigation}}
+        <li class="nav-link"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+      </ul>
+    </nav>
+  </div>
+</header>

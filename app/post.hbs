@@ -1,0 +1,23 @@
+{{!< default}}
+
+{{#post}}
+
+    <article class="{{post_class}}">
+
+        {{#if image}}
+        <div class="image-gradient-dynamic">
+          <img src="{{image}}" alt="" />
+          <div class="overlay"></div>
+          <div class="copy">
+            <p>{{title}}</p>
+          </div>
+        </div>
+        {{/if}}
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+    </article>
+
+{{/post}}

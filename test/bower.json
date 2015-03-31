@@ -1,0 +1,10 @@
+{
+  "name": "yo-test",
+  "private": true,
+  "dependencies": {
+    "chai": "~1.8.0",
+    "mocha": "~1.14.0",
+    "should": "~5.2.0"
+  },
+  "devDependencies": {}
+}
