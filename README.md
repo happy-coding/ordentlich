@@ -34,4 +34,4 @@ The following pages use this theme for example:
 
 This is an example Screenshot of the Ordentlich theme
 
-![](https://github.com/happy-coding/ordentlich/blob/master/CWP-Demo-Ordentlich-Theme.png)
+![](https://github.com/happy-coding/ordentlich/blob/master/Ordentlich-Theme-Shot.jpg)
