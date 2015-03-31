@@ -41,28 +41,29 @@ footer {
 // ======================================================================================
 
 .image-gradient-dynamic {
+
   $image-gradient-color-top: black; 
-  $transparency-top: 0.7;
+  $transparency-top: .8;
   $image-gradient-color-bottom: black; 
-  $transparency-bottom: 0.9;
+  $transparency-bottom: .8;
   $vertical-angle: 0deg;
   
   position: relative;
   width: 100%;
   margin-bottom: 2rem;
-  @include clearfix;
+  line-height: 0;
 
   img {
-   height: auto;
-   left: 0; 
-   position: relative;
-   top: 0;
-   width: 100%;
-   padding: 0 !important;
-   border: 0 !important;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
   }
 
-  .copy {
+  .image-text {
+
     @include media(max-width 800px) {
           display: none;
     }
@@ -89,8 +90,10 @@ footer {
       transparentize($image-gradient-color-bottom, $transparency-bottom));
     display: block;
     @include position(absolute, 0px 0px 0px 0px);
+    max-width: 100%;
     margin: 0;
     padding: 0;
+    z-index: 998;
   }
 }
 
