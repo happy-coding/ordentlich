@@ -36,6 +36,10 @@ This is an example Screenshot of the Ordentlich theme
 
 ![](https://github.com/happy-coding/ordentlich/blob/master/Ordentlich-Theme-Shot.jpg)
 
+# Feedback
+
+[You can leave us feedback](http://happy-coding.org/portfolio/ordentlich-a-terrific-neat-ghost-theme/)
+
 # Copyright & License
 
 Copyright (C) 2015 HAPPY CODING - Released under the MIT License.
